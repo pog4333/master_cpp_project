@@ -12,9 +12,8 @@ nh = node_handle;
 // hydraulic_oil_tank_fill_level = hydraulic_system_monitor.get_hydraulic_oil_tank_fill_level();
 // hydraulic_oil_pressure = hydraulic_system_monitor.get_hydraulic_oil_pressure();
 // RobotInfo::publish_data();
-while(ros::ok() == true){
-publish_data();
-}}
+
+}
 
 void AGVRobotInfo::publish_data(){
 pub_info = nh->advertise<robotinfo_msgs::RobotInfo10Fields>("robot_info",5);

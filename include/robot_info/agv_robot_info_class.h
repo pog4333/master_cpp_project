@@ -8,11 +8,12 @@ using namespace std;
 
 class AGVRobotInfo : public RobotInfo{
 public:
+void publish_data() override;
 AGVRobotInfo(ros::NodeHandle *node_handle);
 HydraulicSystemMonitor hydraulic_system_monitor;
 protected:
 std::string maximum_payload;
-void publish_data();
+
 
 
 };
